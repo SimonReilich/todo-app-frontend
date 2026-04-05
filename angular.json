@@ -56,8 +56,12 @@
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
+              "optimization": {
+                "fonts": {
+                  "inline": false
+                }
+              },
+              "budgets": [                {
                   "type": "initial",
                   "maximumWarning": "500kB",
                   "maximumError": "1MB"
