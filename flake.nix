@@ -61,7 +61,7 @@
           devScript = pkgs.writeShellApplication {
             name = "run-dev";
             runtimeInputs = [
-              pkgs.nodejs_20
+              pkgs.nodejs_latest
             ];
             text = ''
               # npm start runs the local ng serve from package.json
@@ -92,7 +92,7 @@
         {
           default = pkgs.mkShell {
             buildInputs = with pkgs; [
-              nodejs_20
+              nodejs_latest
               pkg-config
             ];
 
